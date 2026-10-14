@@ -1,6 +1,23 @@
 # Toipan Royal Girls High School Website
 
 A responsive school website developed for Toipan Royal Girls High School using HTML and CSS.
+## Live Demo
+
+**View the website online:**  
+https://maureenmwongela.github.io/toipan-royal-school-website/
+
+**GitHub Repository:**  
+https://github.com/maureenmwongela/toipan-royal-school-website
+
+Explore the live website to see the school's homepage, admissions information, facilities, fee structure, and contact page.
+
+## Project Highlights
+
+- Developed a multi-page school website using HTML5 and CSS3.
+- Created separate pages for school information, admissions, facilities, fees, and contacts.
+- Implemented website navigation and styling.
+- Organized website assets, including the logo and photographs.
+- Published the website using GitHub Pages.
 
 ## About the Project
 
