@@ -1,0 +1,1076 @@
+/* =========================
+   HOME PAGE — HERO SECTION
+========================= */
+
+.home-hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.38);
+}
+
+.hero-overlay h1 {
+    color: white;
+    font-size: 48px;
+    max-width: 900px;
+    margin: 0 0 15px;
+    font-weight: 800;
+}
+
+.hero-overlay p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ed1c24;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #172b8c;
+    transform: translateY(-3px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .home-hero {
+        height: 70vh;
+        min-height: 450px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 32px;
+    }
+
+    .hero-overlay p {
+        font-size: 16px;
+    }
+
+}
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcome-section {
+    width: 88%;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.welcome-text h2 {
+    color: #172b8c;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background: #172b8c;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background: #ed1c24;
+    transform: translateY(-3px);
+}
+
+.welcome-image {
+    text-align: center;
+}
+
+.welcome-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .welcome-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin: 60px auto;
+    }
+
+    .welcome-text h2 {
+        font-size: 30px;
+    }
+
+    .welcome-text p {
+        font-size: 16px;
+    }
+
+    .welcome-image img {
+        max-width: 100%;
+    }
+
+}
+/* =========================
+   WHY CHOOSE TOIPAN ROYAL
+========================= */
+
+.why-section {
+    width: 100%;
+    padding: 85px 5%;
+    box-sizing: border-box;
+    background: white;
+    text-align: center;
+}
+
+.why-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.why-section .section-heading h2 {
+    color: #172b8c;
+    font-size: 40px;
+    margin: 0 0 15px;
+    font-weight: 800;
+}
+
+.why-section .section-heading p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Cards */
+.why-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+}
+
+.why-card {
+    position: relative;
+    background: #f8f9fd;
+    padding: 45px 25px 35px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+/* Red top accent */
+
+.why-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #ed1c24;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.14);
+}
+
+/* Icons */
+
+.why-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #172b8c;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 0 6px 15px rgba(23,43,140,0.25);
+}
+
+.why-card h3 {
+    color: #172b8c;
+    font-size: 21px;
+    margin: 0 0 12px;
+}
+
+.why-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .why-section {
+        padding: 60px 5%;
+    }
+
+    .why-section .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .why-section .section-heading p {
+        font-size: 16px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================
+   OUR SCHOOL AT A GLANCE
+========================= */
+
+.glance-section {
+    width: 100%;
+    padding: 90px 5%;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #172b8c, #243fb0);
+    color: white;
+    text-align: center;
+}
+
+.glance-section .section-heading {
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.glance-section .section-heading h2 {
+    color: white;
+    font-size: 40px;
+    margin: 0 0 15px;
+    font-weight: 800;
+}
+
+.glance-section .section-heading p {
+    color: rgba(255,255,255,0.9);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* STATISTICS AREA */
+
+.glance-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.glance-card {
+    padding: 35px 25px;
+    position: relative;
+}
+
+/* Vertical separators */
+
+.glance-card:not(:nth-child(3n)) {
+    border-right: 1px solid rgba(255,255,255,0.25);
+}
+
+/* Horizontal separators */
+
+.glance-card:nth-child(-n+3) {
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+/* Icons */
+
+.glance-icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+/* Main statistic */
+
+.glance-card h3 {
+    color: white;
+    font-size: 30px;
+    margin: 5px 0 8px;
+    font-weight: 800;
+}
+
+/* Description */
+
+.glance-card p {
+    color: rgba(255,255,255,0.85);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Highlight numbers */
+
+.glance-card:hover h3 {
+    color: #ed1c24;
+    transition: 0.3s ease;
+}
+
+.glance-card:hover .glance-icon {
+    transform: scale(1.12);
+    transition: 0.3s ease;
+}
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+    .glance-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .glance-card:nth-child(3n) {
+        border-right: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .glance-card:nth-child(2n) {
+        border-right: none;
+    }
+
+    .glance-card:nth-child(-n+4) {
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+
+    .glance-section {
+        padding: 65px 5%;
+    }
+
+    .glance-section .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .glance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .glance-card {
+        padding: 28px 20px;
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .glance-card:last-child {
+        border-bottom: none;
+    }
+
+}
+/* =========================
+   WHAT MAKES US DIFFERENT
+========================= */
+
+.difference-section {
+    width: 100%;
+    padding: 80px 5%;
+    box-sizing: border-box;
+    background: #f5f7fc;
+    text-align: center;
+}
+
+.difference-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.small-title {
+    color: #ed1c24;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.difference-content h2 {
+    color: #172b8c;
+    font-size: 38px;
+    margin: 10px 0 18px;
+}
+
+.difference-content > p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 45px;
+}
+
+/* BOXES */
+
+.difference-point {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 4px solid #172b8c;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.10);
+    text-align: left;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.difference-point:hover {
+    transform: translateY(-7px);
+    border-top-color: #ed1c24;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+.difference-point > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: 42px;
+    background: #172b8c;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.difference-point h3 {
+    color: #172b8c;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.difference-point p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* TWO-COLUMN BOX LAYOUT */
+
+.difference-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.difference-content > .small-title,
+.difference-content > h2,
+.difference-content > p {
+    grid-column: 1 / -1;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .difference-section {
+        padding: 60px 5%;
+    }
+
+    .difference-content {
+        grid-template-columns: 1fr;
+    }
+
+    .difference-content h2 {
+        font-size: 30px;
+    }
+
+    .difference-content > p {
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 800px) {
+
+    .home-hero {
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .home-hero img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .welcome-section {
+        margin-top: 0 !important;
+    }
+}
+@media (max-width: 800px) {
+
+    .glance-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .glance-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-height: 160px !important;
+        padding: 25px 15px !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+    }
+
+    .glance-card h3,
+    .glance-card p,
+    .glance-card span {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #172b8c !important;
+        position: relative !important;
+        z-index: 5 !important;
+    }
+}
+/* =================================
+   HOME PAGE FOOTER CONTACT DETAILS
+   ================================= */
+
+   .footer-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.footer-contacts a {
+    display: inline-block;
+    padding: 11px 18px;
+    background: #172b8c;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.footer-contacts a:hover {
+    background: #ed1c24;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 800px) {
+
+    .footer-contacts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-contacts a {
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+/* =================================
+   WELCOME SECTION - POLISHED DESIGN
+   ================================= */
+
+   .welcome-section {
+    position: relative;
+    width: 88%;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.welcome-text h2 {
+    color: #172b8c;
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    font-weight: 800;
+}
+
+.welcome-text h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #ed1c24;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.welcome-text p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.welcome-image {
+    position: relative;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 25px;
+    background: #172b8c;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background: #ed1c24;
+    transform: translateY(-3px);
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+
+    .welcome-section {
+        width: 90%;
+        margin: 50px auto;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .welcome-text h2 {
+        font-size: 30px;
+    }
+
+    .welcome-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .welcome-image img {
+        height: auto;
+        max-height: 350px;
+    }
+
+    .learn-more-btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+/* =================================
+   WHAT MAKES US DIFFERENT
+   ================================= */
+
+   .difference-section {
+    width: 100%;
+    padding: 85px 5%;
+    box-sizing: border-box;
+    background: #f5f7fc;
+}
+
+.difference-content {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.difference-content .small-title {
+    display: inline-block;
+    color: #ed1c24;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.difference-content h2 {
+    color: #172b8c;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 18px;
+}
+
+.difference-content > p {
+    max-width: 800px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.difference-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: white;
+    padding: 25px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border-left: 5px solid #172b8c;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    transition: 0.3s ease;
+}
+
+.difference-point:hover {
+    transform: translateX(6px);
+    border-left-color: #ed1c24;
+}
+
+.difference-point > span {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #172b8c;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.difference-point h3 {
+    color: #172b8c;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.difference-point p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+
+    .difference-section {
+        padding: 60px 5%;
+    }
+
+    .difference-content h2 {
+        font-size: 30px;
+    }
+
+    .difference-content > p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .difference-point {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .difference-point h3 {
+        font-size: 18px;
+    }
+
+    .difference-point p {
+        font-size: 15px;
+    }
+}
+/* =================================
+   ADMISSIONS CTA - POLISHED DESIGN
+   ================================= */
+
+   .cta-section {
+    width: 100%;
+    padding: 85px 5%;
+    box-sizing: border-box;
+    background: #172b8c;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.cta-content h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 18px;
+}
+
+.cta-content p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ed1c24;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: white;
+    color: #172b8c !important;
+    transform: translateY(-3px);
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+
+    .cta-section {
+        padding: 60px 5%;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+    .cta-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .cta-button {
+        width: 90%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+}
+/* =================================
+   SIMPLE HOME FOOTER
+   ================================= */
+
+   footer {
+    width: 100%;
+    padding: 40px 5% 20px;
+    box-sizing: border-box;
+    background: #f5f7fc;
+    color: #172b8c;
+    text-align: center;
+    border-top: 4px solid #172b8c;
+}
+
+footer h3 {
+    color: #172b8c;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 10px;
+}
+
+footer > p {
+    color: #666;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 22px auto;
+}
+
+.footer-contacts a {
+    display: inline-block;
+    padding: 10px 17px;
+    background: #172b8c;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.footer-contacts a:hover {
+    background: #ed1c24;
+    transform: translateY(-2px);
+}
+
+footer .copyright {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+    color: #777;
+}
+
+@media (max-width: 800px) {
+
+    footer {
+        padding: 35px 5% 18px;
+    }
+
+    footer h3 {
+        font-size: 19px;
+    }
+
+    .footer-contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+    }
+
+    .footer-contacts a {
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+/* =====================================================
+   FLOATING WHATSAPP BUTTON
+   ===================================================== */
+
+   .whatsapp-float {
+    position: fixed;
+    left: 20px;
+    bottom: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    background: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-icon {
+    width: 31px;
+    height: 31px;
+    display: block;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .whatsapp-float {
+        left: 15px;
+        bottom: 20px;
+
+        width: 52px;
+        height: 52px;
+
+        font-size: 28px;
+    }
+}

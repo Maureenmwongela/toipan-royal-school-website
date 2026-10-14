@@ -1,0 +1,735 @@
+/* CONTACT BANNER */
+
+.contact-banner {
+    height: 280px;
+    background: #172b8c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-banner-content h1 {
+    color: white;
+    font-size: 52px;
+    margin: 0 0 10px;
+}
+
+.contact-banner-content p {
+    color: white;
+    font-size: 21px;
+}
+
+
+/* CONTACT PAGE */
+
+.contact-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-intro h2 {
+    color: #172b8c;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* CONTACT CARDS */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.contact-card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    border-top: 5px solid #172b8c;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+}
+
+.contact-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    background: #f1f3fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.contact-card h3 {
+    color: #172b8c;
+    font-size: 22px;
+}
+
+.contact-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* CALL / EMAIL */
+
+.contact-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: #172b8c;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background: #ed1c24;
+}
+
+
+/* SOCIAL SECTION */
+
+.social-section {
+    background: #f5f7fc;
+    padding: 45px 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.social-section h2 {
+    color: #172b8c;
+    font-size: 32px;
+}
+
+.social-section p {
+    color: #555;
+}
+
+
+/* SOCIAL BUTTONS */
+
+.social-links {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.social-links a {
+    display: block;
+    padding: 17px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.facebook-btn {
+    background: #1877F2;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-banner-content h1 {
+        font-size: 38px;
+    }
+
+}
+/* SCHOOL MAP */
+
+.map-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: #172b8c;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.map-section p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.map-container {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    display: block;
+}
+.phone-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.call-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    background: #172b8c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.call-button:hover {
+    background: #ed1c24;
+    transform: translateY(-2px);
+}
+/* =================================
+   CONTACT PAGE - NEW CARD DESIGN
+   ================================= */
+
+   .contact-grid {
+    align-items: stretch;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #172b8c;
+    box-sizing: border-box;
+}
+
+.contact-card h2,
+.contact-card h3 {
+    color: #172b8c;
+}
+
+.contact-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* PHONE BUTTONS */
+
+.phone-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.call-button {
+    display: block;
+    width: 100%;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    background: #172b8c;
+    color: #ffffff !important;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.call-button:hover {
+    background: #ed1c24;
+    transform: translateY(-2px);
+}
+
+/* EMAIL BUTTON */
+
+.contact-card .email-button,
+.email-button {
+    display: inline-block;
+    padding: 13px 25px;
+    margin-top: 15px;
+    background: #172b8c;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.contact-card .email-button:hover,
+.email-button:hover {
+    background: #ed1c24;
+    transform: translateY(-2px);
+}
+
+/* SOCIAL BUTTONS */
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.social-buttons a {
+    display: block;
+    padding: 14px 18px;
+    border-radius: 8px;
+    color: white !important;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.social-buttons a:hover {
+    transform: translateY(-2px);
+}
+
+/* WHATSAPP */
+
+.social-buttons a:first-child {
+    background: #25D366;
+}
+
+/* FACEBOOK */
+
+.social-buttons a:last-child {
+    background: #1877F2;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+    .call-button {
+        font-size: 15px;
+        padding: 14px 10px;
+    }
+}
+/* =================================
+   CONTACT CARDS - FINAL DESIGN
+   ================================= */
+
+   .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-sizing: border-box;
+    text-align: center;
+    border-top: 5px solid #172b8c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card h3 {
+    color: #172b8c;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.contact-card p {
+    color: #555;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+.contact-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f4ff;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+
+/* PHONE BUTTONS */
+
+.phone-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.call-button {
+    display: block;
+    width: 100%;
+    padding: 14px 10px;
+    box-sizing: border-box;
+    background: #172b8c;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.call-button:hover {
+    background: #ed1c24;
+    transform: translateY(-2px);
+}
+
+
+/* EMAIL BUTTON */
+
+.email-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background: #172b8c;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.email-button:hover {
+    background: #ed1c24;
+    transform: translateY(-2px);
+}
+
+
+/* SOCIAL MEDIA */
+
+.social-section {
+    margin-top: 50px;
+    padding: 45px 25px;
+    background: #f5f7fc;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.social-section h2 {
+    color: #172b8c;
+    margin-bottom: 10px;
+}
+
+.social-section p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.social-links a {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white !important;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.facebook-btn {
+    background: #1877F2;
+}
+
+.social-links a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+    .social-section {
+        margin-top: 20px;
+        padding: 35px 20px;
+        border-radius: 0;
+    }
+
+    .contact-card h3 {
+        font-size: 22px;
+    }
+}
+/* =================================
+   FOOTER CONTACT DETAILS
+   ================================= */
+
+   .footer-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.footer-contacts a {
+    display: inline-block;
+    padding: 11px 18px;
+    background: #172b8c;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.footer-contacts a:hover {
+    background: #ed1c24;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 800px) {
+
+    .footer-contacts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-contacts a {
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+/* =====================================================
+   ENQUIRY FORM
+   ===================================================== */
+
+   .enquiry-section {
+    width: 100%;
+    padding: 75px 5%;
+    background: #f5f7fc;
+    box-sizing: border-box;
+}
+
+.enquiry-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.enquiry-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.enquiry-heading span {
+    color: #ed1c24;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.enquiry-heading h2 {
+    color: #172b8c;
+    font-size: 36px;
+    margin: 10px 0 15px;
+}
+
+.enquiry-heading p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: auto;
+}
+
+.enquiry-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: #172b8c;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d5d9e2;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #172b8c;
+    box-shadow: 0 0 0 3px rgba(23, 43, 140, 0.10);
+}
+
+.enquiry-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: #ed1c24;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.enquiry-button:hover {
+    background: #172b8c;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+
+    .enquiry-section {
+        padding: 55px 5%;
+    }
+
+    .enquiry-heading h2 {
+        font-size: 29px;
+    }
+
+    .enquiry-form {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
+/* =====================================================
+   FORM SUCCESS MESSAGE
+   ===================================================== */
+
+   .form-status {
+    margin-top: 20px;
+    padding: 14px 18px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background: #e8f7ee;
+    color: #176b3a;
+    border: 1px solid #b7e4c7;
+}
+
+.form-status.error {
+    display: block;
+    background: #fdeaea;
+    color: #a51d2a;
+    border: 1px solid #f3b5b5;
+}

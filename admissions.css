@@ -1,0 +1,1405 @@
+/* =====================================
+   TOIPAN ROYAL - ADMISSIONS PAGE
+   ===================================== */
+
+   .page-banner {
+    background: linear-gradient(135deg, #172b8c, #243fb0);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.page-banner h1 {
+    margin: 0 0 12px;
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.page-banner p {
+    margin: 0;
+    font-size: 19px;
+}
+
+
+/* CLASSES */
+
+.admission-section {
+    width: 88%;
+    max-width: 1200px;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.admission-section h2,
+.admission-fees h2,
+.requirements-section h2,
+.documents-section h2 {
+    color: #172b8c;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.admission-intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.class-card {
+    background: white;
+    padding: 32px 20px;
+    border-radius: 12px;
+    color: #172b8c;
+    font-size: 21px;
+    font-weight: 700;
+    border-top: 4px solid #ed1c24;
+    box-shadow: 0 7px 22px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+
+/* ADMISSION FEES */
+
+.admission-fees {
+    background: #f5f7fc;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.admission-fees > p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.admission-table-container {
+    max-width: 1000px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.admission-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 7px 22px rgba(0,0,0,0.10);
+}
+
+.admission-table th {
+    background: #172b8c;
+    color: white;
+    padding: 17px;
+    text-align: left;
+}
+
+.admission-table td {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+    text-align: left;
+}
+
+.admission-table tr:hover {
+    background: #f8f9ff;
+}
+
+.highlight-row {
+    background: #fff4f4;
+}
+
+
+/* BOARDING REQUIREMENTS */
+
+.requirements-section {
+    width: 88%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.requirements-section > p,
+.documents-section > p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.requirements-grid div {
+    background: #f5f7fc;
+    padding: 20px;
+    border-radius: 10px;
+    color: #444;
+    font-size: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    transition: 0.3s ease;
+}
+
+.requirements-grid div:hover {
+    transform: translateY(-4px);
+}
+
+
+/* IMPORTANT DOCUMENTS */
+
+.documents-section {
+    background: #f5f7fc;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.documents-list {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.documents-list div {
+    background: white;
+    padding: 18px;
+    border-left: 4px solid #172b8c;
+    border-radius: 8px;
+    text-align: left;
+    color: #444;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+
+/* CALL TO ACTION */
+
+.admission-cta {
+    background: linear-gradient(135deg, #172b8c, #243fb0);
+    color: white;
+    text-align: center;
+    padding: 85px 5%;
+}
+
+.admission-cta h2 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.admission-cta p {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.admission-cta a {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ed1c24;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.admission-cta a:hover {
+    background: white;
+    color: #172b8c;
+    transform: translateY(-3px);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 55px 5% 25px;
+}
+
+footer h3 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #d1d5db;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+footer .copyright {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .page-banner {
+        padding: 55px 20px;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+    }
+
+    .admission-section {
+        width: 90%;
+    }
+
+    .class-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .documents-list {
+        grid-template-columns: 1fr;
+    }
+
+    .admission-section h2,
+    .admission-fees h2,
+    .requirements-section h2,
+    .documents-section h2 {
+        font-size: 27px;
+    }
+
+    .admission-cta h2 {
+        font-size: 29px;
+    }
+
+}
+/* ============================= */
+/* ADMISSION LETTER DOWNLOAD */
+/* ============================= */
+
+.admission-letter-section {
+    width: 100%;
+    padding: 70px 5%;
+    box-sizing: border-box;
+    background: #f5f7fc;
+    text-align: center;
+}
+
+.admission-letter-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.admission-letter-content .section-label {
+    color: #ed1c24;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.admission-letter-content h2 {
+    color: #172b8c;
+    font-size: 38px;
+    margin: 10px 0 15px;
+}
+
+.admission-letter-content p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.admission-download-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #ed1c24;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.admission-download-btn:hover {
+    background: #172b8c;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+
+    .admission-letter-section {
+        padding: 55px 5%;
+    }
+
+    .admission-letter-content h2 {
+        font-size: 30px;
+    }
+
+    .admission-letter-content p {
+        font-size: 16px;
+    }
+
+    .admission-download-btn {
+        width: 90%;
+        max-width: 300px;
+    }
+
+}
+@media (max-width: 800px) {
+
+    .admission-fees-section,
+    .fees-section,
+    .table-container,
+    .fees-table-container,
+    .admission-fees-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow-x: hidden !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        box-sizing: border-box !important;
+    }
+
+    .admission-fees-section table,
+    .fees-section table,
+    .table-container table,
+    .fees-table-container table,
+    .admission-fees-container table {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        table-layout: fixed !important;
+        margin: 0 !important;
+    }
+
+    .admission-fees-section th,
+    .admission-fees-section td,
+    .fees-section th,
+    .fees-section td,
+    .table-container th,
+    .table-container td,
+    .fees-table-container th,
+    .fees-table-container td,
+    .admission-fees-container th,
+    .admission-fees-container td {
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        padding: 8px 4px !important;
+        font-size: 11px !important;
+        line-height: 1.3 !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+    }
+}
+@media (max-width: 800px) {
+
+    .admission-table-container {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .admission-table {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        table-layout: fixed !important;
+        border-collapse: collapse;
+    }
+
+    .admission-table th,
+    .admission-table td {
+        padding: 9px 4px !important;
+        font-size: 11px !important;
+        line-height: 1.3;
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .admission-table th:nth-child(1),
+    .admission-table td:nth-child(1) {
+        width: 36% !important;
+    }
+
+    .admission-table th:nth-child(2),
+    .admission-table td:nth-child(2) {
+        width: 24% !important;
+    }
+
+    .admission-table th:nth-child(3),
+    .admission-table td:nth-child(3) {
+        width: 40% !important;
+    }
+}
+@media (max-width: 800px) {
+
+    .admission-fees,
+    .admission-section,
+    .boarding-section,
+    .admission-letter-section,
+    .admissions-cta {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .admission-fees,
+    .admission-section,
+    .boarding-section,
+    .admission-letter-section,
+    .admissions-cta {
+        padding-top: 45px !important;
+        padding-bottom: 45px !important;
+    }
+
+    .admission-fees + section,
+    section + section {
+        margin-top: 0 !important;
+    }
+}
+@media (max-width: 800px) {
+
+    /* Remove large gaps between sections */
+    .page-banner,
+    .admission-section,
+    .admission-fees,
+    .requirements-section,
+    .documents-section,
+    .admission-letter-section,
+    .admission-cta {
+        margin: 0 !important;
+    }
+
+    /* Keep comfortable spacing inside each section */
+    .admission-section,
+    .admission-fees,
+    .requirements-section,
+    .documents-section,
+    .admission-letter-section,
+    .admission-cta {
+        padding-top: 45px !important;
+        padding-bottom: 45px !important;
+    }
+
+    /* Alternate section backgrounds */
+    .admission-section {
+        background: #ffffff !important;
+    }
+
+    .admission-fees {
+        background: #f5f7fc !important;
+    }
+
+    .requirements-section {
+        background: #ffffff !important;
+    }
+
+    .documents-section {
+        background: #f5f7fc !important;
+    }
+
+    .admission-letter-section {
+        background: #ffffff !important;
+    }
+
+    .admission-cta {
+        background: #f5f7fc !important;
+    }
+
+    /* Remove unwanted gaps around headings */
+    .admission-section h2,
+    .admission-fees h2,
+    .requirements-section h2,
+    .documents-section h2 {
+        margin-top: 0 !important;
+    }
+}
+/* Ready to Join section */
+.admission-cta {
+    background: #172b8c !important;
+    color: white !important;
+    text-align: center;
+}
+
+.admission-cta h2 {
+    color: white !important;
+}
+
+.admission-cta p {
+    color: white !important;
+}
+
+.admission-cta a {
+    background: #ed1c24 !important;
+    color: white !important;
+}
+/* =================================
+   ADMISSIONS PAGE BANNER
+   ================================= */
+
+   .page-banner {
+    width: 100%;
+    min-height: 280px;
+    padding: 70px 5%;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #172b8c, #243da8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-banner-content {
+    max-width: 850px;
+}
+
+.page-banner-content h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 15px;
+    letter-spacing: 1px;
+}
+
+.page-banner-content p {
+    color: white;
+    font-size: 19px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+
+    .page-banner {
+        min-height: 220px;
+        padding: 55px 5%;
+    }
+
+    .page-banner-content h1 {
+        font-size: 34px;
+    }
+
+    .page-banner-content p {
+        font-size: 16px;
+    }
+} 
+/* Fix Admissions banner text layout */
+
+.page-banner-content {
+    display: block !important;
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+.page-banner-content h1 {
+    display: block !important;
+    margin: 0 0 15px !important;
+}
+
+.page-banner-content p {
+    display: block !important;
+    margin: 0 !important;
+}
+/* =================================
+   ADMISSIONS INTRODUCTION
+   ================================= */
+
+   .admission-section {
+    width: 100%;
+    padding: 75px 5%;
+    box-sizing: border-box;
+    background: #ffffff;
+    text-align: center;
+}
+
+.admission-section h2 {
+    color: #172b8c;
+    font-size: 38px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+.admission-section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #ed1c24;
+    margin: 15px auto 0;
+    border-radius: 3px;
+}
+
+.admission-section > p {
+    max-width: 800px;
+    margin: 25px auto 0;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+
+    .admission-section {
+        padding: 55px 5%;
+    }
+
+    .admission-section h2 {
+        font-size: 29px;
+    }
+
+    .admission-section > p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+}
+/* =================================
+   CLASSES OFFERED
+   ================================= */
+
+   .class-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.class-card {
+    background: #ffffff;
+    padding: 35px 28px;
+    border-radius: 16px;
+    border-top: 5px solid #172b8c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-6px);
+    border-top-color: #ed1c24;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.class-card h3 {
+    color: #172b8c;
+    font-size: 23px;
+    font-weight: 800;
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.class-card p {
+    color: #5f5f5f;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .class-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* PHONE */
+@media (max-width: 700px) {
+
+    .class-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 35px;
+    }
+
+    .class-card {
+        padding: 28px 22px;
+    }
+
+    .class-card h3 {
+        font-size: 21px;
+    }
+
+    .class-card p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+}
+/* =================================
+   ADMISSION & OTHER FEES
+   ================================= */
+
+   .admission-fees {
+    width: 100%;
+    padding: 80px 5%;
+    box-sizing: border-box;
+    background: #f5f7fc;
+}
+
+.admission-fees h2 {
+    color: #172b8c;
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 35px;
+}
+
+.admission-table-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    overflow-x: auto;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.admission-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admission-table th {
+    background: #172b8c;
+    color: white;
+    padding: 16px 12px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.admission-table td {
+    padding: 15px 12px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.admission-table tr:last-child td {
+    border-bottom: none;
+}
+
+.admission-table tr:nth-child(even) {
+    background: #f8f9fd;
+}
+
+.admission-table tr:hover {
+    background: #eef1fb;
+}
+
+.admission-table td:nth-child(2) {
+    color: #172b8c;
+    font-weight: 800;
+}
+
+@media (max-width: 800px) {
+
+    .admission-fees {
+        padding: 55px 5%;
+    }
+
+    .admission-fees h2 {
+        font-size: 29px;
+        margin-bottom: 25px;
+    }
+
+    .admission-table th,
+    .admission-table td {
+        padding: 10px 7px;
+        font-size: 12px;
+    }
+}
+/* =================================
+   BOARDING PERSONAL EFFECTS
+   ================================= */
+
+   .requirements-section {
+    width: 100%;
+    padding: 80px 5%;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.requirements-section h2 {
+    color: #172b8c;
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.requirements-list {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 25px;
+}
+
+.requirements-list li {
+    list-style: none;
+    background: #f5f7fc;
+    padding: 16px 20px;
+    border-left: 4px solid #172b8c;
+    border-radius: 8px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.requirements-list li::before {
+    content: "✓";
+    color: #ed1c24;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+
+    .requirements-section {
+        padding: 55px 5%;
+    }
+
+    .requirements-section h2 {
+        font-size: 29px;
+        margin-bottom: 30px;
+    }
+
+    .requirements-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .requirements-list li {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+}
+/* =================================
+   BOARDING PERSONAL EFFECTS TABLE
+   ================================= */
+
+   .requirements-table-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.requirements-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.requirements-table th {
+    background: #172b8c;
+    color: #ffffff;
+    padding: 16px 12px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.requirements-table td {
+    padding: 14px 12px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.requirements-table tr:nth-child(even) {
+    background: #f8f9fd;
+}
+
+.requirements-table tr:hover {
+    background: #eef1fb;
+}
+
+.requirements-table td:first-child {
+    width: 8%;
+    text-align: center;
+    color: #172b8c;
+    font-weight: 700;
+}
+
+.requirements-table td:nth-child(2) {
+    width: 57%;
+    color: #172b8c;
+    font-weight: 600;
+}
+
+.requirements-table td:nth-child(3) {
+    width: 35%;
+}
+
+@media (max-width: 700px) {
+
+    .requirements-table th,
+    .requirements-table td {
+        padding: 11px 7px;
+        font-size: 12px;
+    }
+
+    .requirements-table th {
+        font-size: 12px;
+    }
+
+    .requirements-table td:first-child {
+        width: 10%;
+    }
+
+    .requirements-table td:nth-child(2) {
+        width: 52%;
+    }
+
+    .requirements-table td:nth-child(3) {
+        width: 38%;
+    }
+}
+/* =================================
+   IMPORTANT DOCUMENTS TABLE
+   ================================= */
+
+   .documents-table-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.documents-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.documents-table th {
+    background: #172b8c;
+    color: #ffffff;
+    padding: 16px 12px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.documents-table td {
+    padding: 14px 12px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.documents-table tr:nth-child(even) {
+    background: #f8f9fd;
+}
+
+.documents-table tr:hover {
+    background: #eef1fb;
+}
+
+.documents-table td:first-child {
+    width: 8%;
+    text-align: center;
+    color: #172b8c;
+    font-weight: 700;
+}
+
+.documents-table td:nth-child(2) {
+    width: 52%;
+    color: #172b8c;
+    font-weight: 600;
+}
+
+.documents-table td:nth-child(3) {
+    width: 40%;
+}
+
+@media (max-width: 700px) {
+
+    .documents-table th,
+    .documents-table td {
+        padding: 11px 7px;
+        font-size: 12px;
+    }
+
+    .documents-table th {
+        font-size: 12px;
+    }
+
+    .documents-table td:first-child {
+        width: 10%;
+    }
+
+    .documents-table td:nth-child(2) {
+        width: 50%;
+    }
+
+    .documents-table td:nth-child(3) {
+        width: 40%;
+    }
+}
+/* =================================
+   REQUIRED STATIONERY
+   ================================= */
+
+   .stationery-section {
+    width: 100%;
+    padding: 80px 5%;
+    box-sizing: border-box;
+    background: #f5f7fc;
+}
+
+.stationery-content {
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+
+.stationery-content .section-label {
+    display: inline-block;
+    color: #ed1c24;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.stationery-content h2 {
+    color: #172b8c;
+    font-size: 38px;
+    font-weight: 800;
+    margin: 0 0 18px;
+}
+
+.stationery-content > p {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.stationery-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.stationery-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stationery-table th {
+    background: #172b8c;
+    color: #ffffff;
+    padding: 16px 12px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.stationery-table td {
+    padding: 14px 12px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.stationery-table tr:nth-child(even) {
+    background: #f8f9fd;
+}
+
+.stationery-table tr:hover {
+    background: #eef1fb;
+}
+
+.stationery-table td:first-child {
+    width: 8%;
+    text-align: center;
+    color: #172b8c;
+    font-weight: 700;
+}
+
+.stationery-table td:nth-child(2) {
+    width: 57%;
+    color: #172b8c;
+    font-weight: 600;
+}
+
+.stationery-table td:nth-child(3) {
+    width: 35%;
+}
+
+@media (max-width: 700px) {
+
+    .stationery-section {
+        padding: 55px 5%;
+    }
+
+    .stationery-content h2 {
+        font-size: 29px;
+    }
+
+    .stationery-content > p {
+        font-size: 16px;
+    }
+
+    .stationery-table th,
+    .stationery-table td {
+        padding: 11px 7px;
+        font-size: 12px;
+    }
+
+    .stationery-table th {
+        font-size: 12px;
+    }
+}
+/* =================================
+   ADMISSION LETTER SECTION
+   ================================= */
+
+   .admission-letter-section {
+    width: 100%;
+    padding: 75px 5%;
+    box-sizing: border-box;
+    background: #ffffff;
+    text-align: center;
+}
+
+.admission-letter-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 45px 30px;
+    background: #f5f7fc;
+    border-radius: 16px;
+    border-top: 5px solid #172b8c;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.admission-letter-content .section-label {
+    display: inline-block;
+    color: #ed1c24;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.admission-letter-content h2 {
+    color: #172b8c;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+
+.admission-letter-content p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.admission-download-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #ed1c24;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.admission-download-btn:hover {
+    background: #172b8c;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+
+    .admission-letter-section {
+        padding: 55px 5%;
+    }
+
+    .admission-letter-content {
+        padding: 35px 20px;
+    }
+
+    .admission-letter-content h2 {
+        font-size: 29px;
+    }
+
+    .admission-letter-content p {
+        font-size: 15px;
+    }
+
+    .admission-download-btn {
+        width: 90%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+}
+/* =================================
+   READY TO JOIN SECTION
+   ================================= */
+
+   .admission-cta {
+    width: 100%;
+    padding: 75px 5%;
+    box-sizing: border-box;
+    background: #172b8c !important;
+    text-align: center;
+}
+
+.admission-cta h2 {
+    color: #ffffff !important;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 18px;
+}
+
+.admission-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #ffffff !important;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.admission-cta a {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ed1c24 !important;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.admission-cta a:hover {
+    background: #ffffff !important;
+    color: #172b8c !important;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+
+    .admission-cta {
+        padding: 55px 5%;
+    }
+
+    .admission-cta h2 {
+        font-size: 30px;
+    }
+
+    .admission-cta p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .admission-cta a {
+        width: 90%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+}
+/* =====================================================
+   FLOATING WHATSAPP BUTTON
+   ===================================================== */
+
+   .whatsapp-float {
+    position: fixed;
+    left: 20px;
+    bottom: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    background: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-icon {
+    width: 31px;
+    height: 31px;
+}
+
+@media (max-width: 600px) {
+
+    .whatsapp-float {
+        left: 15px;
+        bottom: 20px;
+
+        width: 52px;
+        height: 52px;
+    }
+
+    .whatsapp-icon {
+        width: 29px;
+        height: 29px;
+    }
+}

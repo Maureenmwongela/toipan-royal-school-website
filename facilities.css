@@ -1,0 +1,550 @@
+/* =====================================
+   TOIPAN ROYAL - FACILITIES PAGE
+   ===================================== */
+
+   .page-banner {
+    background: linear-gradient(135deg, #172b8c, #243fb0);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.page-banner h1 {
+    margin: 0 0 12px;
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.page-banner p {
+    margin: 0;
+    font-size: 19px;
+}
+
+
+/* FACILITIES INTRO */
+
+.facilities-page {
+    width: 88%;
+    max-width: 1200px;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.facilities-page h2 {
+    color: #172b8c;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.facility-intro {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* FACILITY CARDS */
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.facility-card {
+    background: white;
+    padding: 35px 20px;
+    border-radius: 15px;
+    border-top: 4px solid #172b8c;
+    box-shadow: 0 7px 22px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-8px);
+    border-top-color: #ed1c24;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+.facility-card > span {
+    display: block;
+    font-size: 43px;
+    margin-bottom: 18px;
+}
+
+.facility-card h3 {
+    color: #172b8c;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.facility-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* SCHOOL PHOTO */
+
+.facility-photo {
+    width: 88%;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.facility-photo img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.facility-photo div {
+    padding: 10px;
+}
+
+.facility-photo h2 {
+    color: #172b8c;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.facility-photo p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 55px 5% 25px;
+}
+
+footer h3 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #d1d5db;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+footer .copyright {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facility-photo {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .page-banner {
+        padding: 55px 20px;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+    }
+
+    .facilities-page {
+        width: 90%;
+    }
+
+    .facilities-page h2 {
+        font-size: 28px;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facility-photo {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .facility-photo img {
+        height: 300px;
+    }
+
+    .facility-photo h2 {
+        font-size: 28px;
+    }
+
+}
+/* =================================
+   FACILITIES PAGE BANNER
+   ================================= */
+
+   .page-banner {
+    width: 100%;
+    min-height: 280px;
+    padding: 70px 5%;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #172b8c, #243da8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-banner-content {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+.page-banner-content h1 {
+    display: block;
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 15px;
+    letter-spacing: 1px;
+}
+
+.page-banner-content p {
+    display: block;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+
+    .page-banner {
+        min-height: 220px;
+        padding: 55px 5%;
+    }
+
+    .page-banner-content h1 {
+        font-size: 34px;
+    }
+
+    .page-banner-content p {
+        font-size: 16px;
+    }
+}
+/* =================================
+   FACILITY CARDS
+   ================================= */
+
+   .facilities-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.facility-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    border-top: 5px solid #172b8c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-7px);
+    border-top-color: #ed1c24;
+    box-shadow: 0 15px 32px rgba(0, 0, 0, 0.12);
+}
+
+.facility-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.facility-card h3 {
+    color: #172b8c;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 14px;
+}
+
+.facility-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* PHONE */
+@media (max-width: 700px) {
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 35px;
+    }
+
+    .facility-card {
+        padding: 25px 20px;
+    }
+
+    .facility-card img {
+        height: auto;
+        max-height: 220px;
+    }
+
+    .facility-card h3 {
+        font-size: 20px;
+    }
+
+    .facility-card p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+/* =================================
+   FACILITIES BOTTOM IMAGE - MOBILE
+   ================================= */
+
+   @media (max-width: 700px) {
+
+    .facilities-page img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 20px auto !important;
+    }
+
+}
+/* =================================
+   BOTTOM SCHOOL PHOTO - MOBILE
+   ================================= */
+
+@media (max-width: 700px) {
+
+    .facility-photo {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 45px 5% !important;
+        box-sizing: border-box !important;
+
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .facility-photo img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+        border-radius: 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    .facility-photo > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .facility-photo h2 {
+        font-size: 28px !important;
+        line-height: 1.25 !important;
+        margin: 0 0 15px !important;
+    }
+
+    .facility-photo p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+        margin: 0 !important;
+    }
+
+}
+/* =================================
+   CONDUCIVE ENVIRONMENT SECTION
+   ================================= */
+
+   .facility-photo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.facility-photo img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.facility-photo > div {
+    padding: 10px 0;
+}
+
+.facility-photo h2 {
+    color: #172b8c;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+.facility-photo h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #ed1c24;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.facility-photo p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* PHONE */
+@media (max-width: 700px) {
+
+    .facility-photo {
+        margin: 0 !important;
+        padding: 45px 5% !important;
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .facility-photo img {
+        height: auto !important;
+        max-height: 300px;
+        object-fit: contain !important;
+    }
+
+    .facility-photo h2 {
+        font-size: 29px !important;
+    }
+
+    .facility-photo p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+}
+/* =====================================================
+   FLOATING WHATSAPP BUTTON
+   ===================================================== */
+
+   .whatsapp-float {
+    position: fixed;
+    left: 20px;
+    bottom: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    background: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-icon {
+    width: 31px;
+    height: 31px;
+}
+
+@media (max-width: 600px) {
+
+    .whatsapp-float {
+        left: 15px;
+        bottom: 20px;
+
+        width: 52px;
+        height: 52px;
+    }
+
+    .whatsapp-icon {
+        width: 29px;
+        height: 29px;
+    }
+}
